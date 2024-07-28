@@ -101,13 +101,13 @@ def train_model(real_audio_directory, fake_audio_directory, val_real_audio_direc
     # Print the model summary
     model.summary()
 
-    # Model Training(ignore for now) with Early Stopping
+    # Model Training with Early Stopping
     with tf.device('/device:GPU:0'):  # Specify GPU
-        print("Training(ignore for now) started...")
+        print("Training started...")
         early_stopping = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
         history = model.fit(train_features_scaled, train_labels, epochs=60, batch_size=32, validation_data=(val_features_scaled, val_labels), callbacks=[early_stopping])
 
-    print("Training(ignore for now) completed.")
+    print("Training completed.")
     return model, history, scaler
 
 # Paths to directories
@@ -124,7 +124,7 @@ trained_model.save("optimised_lstm_model")
 joblib.dump(scaler, 'scaler.pkl')
 
 # Print training history
-print("Training(ignore for now) History:")
+print("History:")
 print(training_history.history)
 
 # Test the model on a separate test set
