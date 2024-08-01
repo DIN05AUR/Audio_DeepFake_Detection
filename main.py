@@ -21,7 +21,7 @@ def extract_features(audio_file, sr=16000):
     return mfccs
 
 # Load the trained model
-model = tf.keras.models.load_model("Model/model.h5")
+model = tf.keras.models.load_model("Model/ann.h5")
 
 # Function to detect a fake voice
 def detect_fake_voice(audio_file, model):
@@ -42,7 +42,7 @@ def detect_fake_voice(audio_file, model):
     return prediction
 
 # Example of making a prediction on a new audio file
-new_audio_file = "enter the location of your audio clip here"
+new_audio_file = "enter the path of the audio clip to be analyzed" #enter the path of the audio file here
 prediction = detect_fake_voice(new_audio_file, model)
 
 # print(prediction)

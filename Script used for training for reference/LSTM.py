@@ -35,7 +35,7 @@ def load_audio_files_from_directory(directory):
     audio_files = [os.path.join(directory, filename) for filename in os.listdir(directory) if filename.endswith('.wav')]
     return audio_files
 
-# Training(ignore for now) process
+# Script used for training for reference process
 def train_model(real_audio_directory, fake_audio_directory, val_real_audio_directory, val_fake_audio_directory):
     # Print available devices
     physical_devices = tf.config.list_physical_devices('GPU')
