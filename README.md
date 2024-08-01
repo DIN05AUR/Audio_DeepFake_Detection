@@ -32,7 +32,7 @@ The primary dataset used to train this model was the Fake-or-Real (FoR) dataset,
 
 Due to the original dataset's size of 25GB, the dataset folder includes a small representative sample of the complete dataset. It contains three folders: testing, training, and validation, each consisting of both fake and real samples.
 
-![Dataset List](https://drive.google.com/file/d/1bxqiEzepxOkEMGUy27fBBE9vRRs_haml/view?usp=drive_link)
+![Dataset List](https://drive.google.com/file/d/1VQOTdOtibjG6KvkK3WsDzhQHPGEBh0qX/view?usp=sharing)
 
 Fake-or-Real(FoR) Dataset Link:
 https://bil.eecs.yorku.ca/datasets/
@@ -47,7 +47,7 @@ To achieve higher accuracy in determining whether an audio clip is real or AI-ge
 - **LSTM Model:** After fully optimizing the ANN model to it's max potential and still not meeting our expectations, we transitioned to a Long Short-Term Memory (LSTM) neural network architecture.
 
 The trained (ready-to-use) models are available in the Model/ folder. Here are the metrics of the trained models.
-![Model Metrics](https://drive.google.com/file/d/1Lq-aGyd2S36iQNBP9Wuat6GEaP7eZXAm/view?usp=sharing)
+![Model Metrics](https://drive.google.com/file/d/1Bw4k17WdLk97RyLMRvIdtwvyAzaIwGPc/view?usp=sharing)
 ## Installation 💻
 
 **Steps to Use the Model:**
@@ -64,7 +64,7 @@ The trained (ready-to-use) models are available in the Model/ folder. Here are t
     
 ## Screenshots 📸
 
-![Output Screenshot](https://drive.google.com/file/d/1a0cfeZby1rYn3WiJFaukle3AfeXlc41f/view?usp=sharing)
+![Output Screenshot](https://drive.google.com/file/d/1v9V5YzI2aLgbj5KDlU1kIyquBVDlZHrk/view?usp=sharing)
 ## Author 👨🏻‍💻
 
 - [@DIN05AUR](https://github.com/DIN05AUR)
